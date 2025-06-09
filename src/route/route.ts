@@ -9,6 +9,6 @@ router.get("/todos", TodoController.index);
 router.get("/todo/:id", TodoController.show)
 router.post("/todo", upload.single("image"), TodoController.store);
 router.put("/todo/:id", upload.single("image"), TodoController.update);
-router.delete("/todo/:id", TodoController.destroy);
+router.delete("/todo/:id", TodoController.destory);
 
 export default router;
